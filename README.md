@@ -28,4 +28,18 @@
 解决掉这个问题。
  
  
-## Module Formats and Module Loaders
+## Module Formats and Module Loaders 模块格式 vs 模块加载器
+*Module format*
+* Native vs non-native
+* Asynchronous Module Definition(AMD)
+* CommonJS
+
+> 模块格式指的是用来定义模块的语法。他们是独立于模块加载器存在的，但是如果没有模块加载器，就没有人知道怎么来
+运行这些语法。模块加载器通常就是一个JavaScript的库，我们把它包含到项目中，他可以理解我们的代码使用的模块格式（使用
+了哪一种语法），并且他知道怎么去加载并执行用这个语法写出来的模块。模块格式和模块加载器的关系就像是JavaScript语言和
+浏览器的关系一样。
+
+
+*Module loaders*
+* RequireJS
+* SystemJS
