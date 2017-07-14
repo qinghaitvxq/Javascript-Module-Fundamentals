@@ -11,7 +11,20 @@
 > 模块是一组有特定功能的代码和数据，它封装了一些实现细节，暴露出公共的API，通过和其他模块的连接来打造出大型应用。
 
 *模块化的目的*
-* create higher-level abstractions
-* Encapsulation
-* Reusability
-* Simplify dependency management
+
+* create higher-level abstractions  高层次的抽象
+
+ > 模块化可以让你从更高的层次来思考你的应用，它让我们从一组方法的角度来思考问题，而不是每一个方法。举个例子，如果我是一个
+ 城市的建造者，我希望考虑的是怎么在城市中去布局建筑群，而不是去考虑每一个建筑里的每一块砖头的问题。
+ 
+* Encapsulation 封装
+ > 模块的任务是要暴露出清晰的API供使用方使用，同时隐藏具体的实现细节。这使得维护模块的人可以重构代码，替换算法或其他实现，而不用
+担心影响到依赖这些模块的代码，只要API不变，就不会影响使用方。
+
+* Reusability 重用
+
+* Simplify dependency management 简化依赖管理
+> 一般来说，每个模块都需要声明自己的功能所依赖的其他模块。我们都知道维护HTML页面上庞大js脚本顺序的痛点，实现一个好的模块系统可以
+解决掉这个问题。
+ 
+ 
