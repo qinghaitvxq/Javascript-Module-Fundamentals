@@ -1,0 +1,24 @@
+{
+  "name": "javascript-module-fundamentals",
+  "version": "1.0.0",
+  "description": "* popular module patterns\r * the AMD and CommonJS module formats\r * Client-size module loaders\r * ES2015 modules\r * Module bundlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinghaitvxq/Javascript-Module-Fundamentals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qinghaitvxq/Javascript-Module-Fundamentals/issues"
+  },
+  "homepage": "https://github.com/qinghaitvxq/Javascript-Module-Fundamentals#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.3",
+    "systemjs": "^0.20.15"
+  }
+}
