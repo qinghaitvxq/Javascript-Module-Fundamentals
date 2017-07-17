@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="navbar-brand">MultiMath (乘法小游戏) using bundle</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-horizontal" id="nameform">
+        <div class="form-group">
+            <label for="playername" class="col-sm-2 control-label">玩家姓名</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="playername" size="20" placeholder="Player Name" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="factor" class="col-sm-2 control-label">因数</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="factor" size="20" value="5" placeholder="Factor" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="problemCount" class="col-sm-2 control-label">计数</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="problemCount" size="20" placeholder="Number of Problems" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary" id="startGame">开始游戏</button>
+                <button class="btn btn-success" id="calculate" disabled>计算分数</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-horizontal" id="game"></div>
+
+    <div class="col-sm-offset-2 col-sm-10" id="scores"><h2>计分板</h2><h4>No scores yet</h4></div>
+
+    <!--<script src="../node_modules/systemjs/dist/system.js"></script>-->
+    <!--<script>-->
+        <!--System.config({-->
+            <!--meta:{-->
+                <!--format:'cjs'-->
+            <!--}-->
+        <!--});-->
+        <!--System.import('build/app.js');-->
+    <!--</script>-->
+    <!--../node_modules/.bin/webpack-->
+
+    <!--install webpack 、babel-loader at first-->
+    <!--config webpack in webpack.config.js-->
+    <!--then in the current director ,run the command ../node_modules/.bin/webpack on terminal-->
+
+    <script src="./build/bundle.js"></script>
+</body>
+</html>
